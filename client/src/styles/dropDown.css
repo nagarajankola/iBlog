@@ -1,0 +1,41 @@
+.ip_container{
+    max-width: 90vw;
+    margin: 1%;
+    margin-left: 0% !important;
+    /* margin: 0 auto; */
+}
+
+.ip_select-box{
+    width: 90vw;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 2%;
+    
+}
+
+.ip_select-box select{
+    
+    height: 42px;
+    padding: 10px 15px;
+    line-height: 16px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #F4F8F7;
+    background-color: #F4F8F7;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.ip_select-box:after{
+    
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5%;
+    border-top: 8px solid #F4F8F7;
+    border-left: 6px solid transparent;
+    border-right: 6% solid transparent;
+    pointer-events: none;
+}

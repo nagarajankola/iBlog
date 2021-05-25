@@ -1,0 +1,24 @@
+form{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h3{
+    margin-left: 1%;
+}
+
+
+#title, #link{
+    width: 90vw;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+#content{
+    width: 90vw;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #F4F8F7;
+}
