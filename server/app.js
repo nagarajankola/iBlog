@@ -1,6 +1,11 @@
 const dotenv = require("dotenv");
 const express = require("express");
+const cors = require("cors");
 // import mongoose from "mongoose";
+
+app.use(cors({
+    origin: "(*)",
+}))
 
 const app = express();
 
