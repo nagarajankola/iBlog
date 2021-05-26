@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.use(cors({
     origin: "*",
+    methods: ["GET", "POST", "DELETE"],
 }))
 
 app.use(require('./router/auth'));
