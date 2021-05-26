@@ -2,7 +2,7 @@
   "name": "blogsite",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5050",
+  "proxy": "https://iblog-nagraj.herokuapp.com",
   "dependencies": {
     "@chakra-ui/react": "^1.6.2",
     "@emotion/react": "^11.4.0",
