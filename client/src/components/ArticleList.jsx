@@ -15,9 +15,9 @@ export default function ArticleList() {
 
   useEffect(async () => {
     // console.log(articleList);
-    const res = await fetch("/allarticles", {
+    const res = await fetch("https://iblog-nagraj.herokuapp.com/allarticles 200!", {
       method: "GET",
-      referrer:"https://iblog-nagraj.herokuapp.com"
+      
     })
       .then((response) => response.json())
       .then((data) => {
