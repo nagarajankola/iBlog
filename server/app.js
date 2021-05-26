@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(require('./router/auth'));
 
 app.get("/", (req,res)=>{
-    res.send("hellooo from app.js");
+    res.send("hellooo from app.js"); 
 }); 
 
 app.listen(PORT, ()=>{
