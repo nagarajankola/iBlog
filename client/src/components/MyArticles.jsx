@@ -12,7 +12,6 @@ import CloseIcon from "@material-ui/icons/Close";
 import Snackbar from "@material-ui/core/Snackbar";
 import empty from "../images/empty.webp";
 
-
 export default function MyArticles() {
   // let  [,setState]=useState();
   const [openSnackDeleteArticle, setOpenSnackDeleteArticle] =
@@ -23,13 +22,13 @@ export default function MyArticles() {
   const currentUser = loggedUserData.store.getState();
   // console.log(currentUser.profile.id);
 
-  const history = useHistory();
+  // const history = useHistory();
 
   const [articleList, setArticleList] = useState([]);
   const [deletedArticleId, setDeletedArticleId] = useState("");
 
   // this is to force update the component
-  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  // const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
   const handleCloseSnackDeleteArticle = (event, reason) => {
     if (reason === "clickaway") {
@@ -38,7 +37,11 @@ export default function MyArticles() {
     setOpenSnackDeleteArticle(false);
   };
 
-  useEffect(async () => {
+  useEffect(() => {
+    fetchArticles();
+  }, []);
+
+  const fetchArticles = async () => {
     const res = await fetch("/allarticles", {
       method: "GET",
     })
@@ -49,7 +52,7 @@ export default function MyArticles() {
         setArticleList(data.allArticles);
       });
     // console.log(articleList);
-  }, []);
+  };
 
   const deleteArticle = async (id) => {
     const res = await fetch("/deleteArticle", {
@@ -63,23 +66,32 @@ export default function MyArticles() {
     });
 
     if (res.status === 204) {
-      // window.alert("article deleted!");
-      // forceUpdate();
-      // setState({});
       setDeletedArticleId(id);
-      forceUpdate();
+      console.log(deletedArticleId);
+      // forceUpdate();
+      fetchArticles();
       setOpenSnackDeleteArticle(true);
-      // history.push('/myprofile');
     } else {
       console.log("error!");
     }
   };
-
-  return articleList.length === 0 ? (
+  const onlyMyArticleList = [];
+  for (let index = 0; index < articleList.length; index++) {
+    if (
+      currentUser.profile.id === articleList[index].uploadedBy._id &&
+      deletedArticleId !== articleList[index]._id
+    )
+      onlyMyArticleList.push(articleList[index]);
+  }
+  console.log("this");
+  console.log(onlyMyArticleList.length);
+  console.log(onlyMyArticleList);
+  console.log("this");
+  return onlyMyArticleList.length === 0 ? (
     <>
       <div
         className="home-articles max-width-1 m-auto font2"
-        style={{ alignContent: "center", backgroundColor:"white"}}
+        style={{ alignContent: "center", backgroundColor: "white" }}
       >
         <h2>My Articles</h2>
       </div>
@@ -91,7 +103,7 @@ export default function MyArticles() {
     <>
       <div className="home-articles max-width-1 m-auto font2">
         <h2>My Articles</h2>
-        {articleList.map((article) => {
+        {onlyMyArticleList.map((article) => {
           if (
             currentUser.profile.id === article.uploadedBy._id &&
             deletedArticleId !== article._id
@@ -154,7 +166,10 @@ export default function MyArticles() {
                     <div>{article.uploadedBy.userName}</div>
                   </div>
                   <div className="buttondate">
-                    <span>{article.uploadedTime.substring(0,10)} | {article.readTime} min read</span>
+                    <span>
+                      {article.uploadedTime.substring(0, 10)} |{" "}
+                      {article.readTime} min read
+                    </span>
                     {/* <button >  */}
                     <a
                       class="myButton"

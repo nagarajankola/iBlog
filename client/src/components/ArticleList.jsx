@@ -22,7 +22,7 @@ export default function ArticleList() {
       .then((data) => {
         setArticleList(data.allArticles);
       });
-    // console.log(articleList);
+    // console.log(articleList.length);
   },[]);
 
   return (
@@ -30,7 +30,7 @@ export default function ArticleList() {
     <div className="home-articles max-width-1 m-auto font2" style={{alignContent:"center"}}>
     <h2>Featured Articles</h2>
     <div className="max-width-1 m-auto font2 nothingToShow">
-        <img src={loading}></img>
+        <img src={loading} ></img>
       </div>
     </div>
     :
