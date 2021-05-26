@@ -15,7 +15,7 @@ app.use(require('./router/auth'));
 
 app.get("/", (req,res)=>{
     res.send("hellooo from app.js");
-});
+}); 
 
 app.listen(PORT, ()=>{
     console.log(`Server is running at ${PORT}`);
