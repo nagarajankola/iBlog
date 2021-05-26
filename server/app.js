@@ -14,7 +14,7 @@ require('./db/conn')
 app.use(express.json());
 
 app.use(cors({
-    origin: "(*)",
+    origin: "*",
 }))
 
 app.use(require('./router/auth'));
