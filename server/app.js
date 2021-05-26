@@ -3,9 +3,6 @@ const express = require("express");
 const cors = require("cors");
 // import mongoose from "mongoose";
 
-app.use(cors({
-    origin: "(*)",
-}))
 
 const app = express();
 
@@ -15,6 +12,10 @@ const PORT = process.env.PORT || 5050;
 require('./db/conn')
 
 app.use(express.json());
+
+app.use(cors({
+    origin: "(*)",
+}))
 
 app.use(require('./router/auth'));
 
