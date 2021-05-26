@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e493b86.chunk.css",
+    "main.js": "/static/js/main.b83612c8.chunk.js",
+    "main.js.map": "/static/js/main.b83612c8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.464d86c1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.464d86c1.js.map",
+    "static/js/2.959840f6.chunk.js": "/static/js/2.959840f6.chunk.js",
+    "static/js/2.959840f6.chunk.js.map": "/static/js/2.959840f6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0e493b86.chunk.css.map": "/static/css/main.0e493b86.chunk.css.map",
+    "static/js/2.959840f6.chunk.js.LICENSE.txt": "/static/js/2.959840f6.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/static/media/11.3eea854a.svg",
+    "static/media/boyAvatar.png": "/static/media/boyAvatar.7eb33c53.png",
+    "static/media/defaultAvatar.dd61314f.png": "/static/media/defaultAvatar.dd61314f.png",
+    "static/media/defaultImage.png": "/static/media/defaultImage.e8b6f424.png",
+    "static/media/diy.png": "/static/media/diy.a01b5f83.png",
+    "static/media/education.png": "/static/media/education.b9aae3c3.png",
+    "static/media/empty.dbb56d29.webp": "/static/media/empty.dbb56d29.webp",
+    "static/media/fashion.png": "/static/media/fashion.4316eb4d.png",
+    "static/media/femaleAvatar1.png": "/static/media/femaleAvatar1.4ef354f3.png",
+    "static/media/femaleAvatar2.png": "/static/media/femaleAvatar2.6d387e00.png",
+    "static/media/finance.png": "/static/media/finance.508fc5c3.png",
+    "static/media/fitness.png": "/static/media/fitness.b47204fd.png",
+    "static/media/food.png": "/static/media/food.abda35eb.png",
+    "static/media/girlAvatar.png": "/static/media/girlAvatar.731079e9.png",
+    "static/media/home.f6afe7c2.svg": "/static/media/home.f6afe7c2.svg",
+    "static/media/loadingg.c18999f3.svg": "/static/media/loadingg.c18999f3.svg",
+    "static/media/logo.6b2f4d04.png": "/static/media/logo.6b2f4d04.png",
+    "static/media/maleAvatar1.png": "/static/media/maleAvatar1.89ce8c99.png",
+    "static/media/maleAvatar2.png": "/static/media/maleAvatar2.18450dd5.png",
+    "static/media/pet.png": "/static/media/pet.4deffd6f.png",
+    "static/media/politics.png": "/static/media/politics.c2ed689b.png",
+    "static/media/tech.png": "/static/media/tech.39843ab6.png",
+    "static/media/travel.png": "/static/media/travel.3677e833.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.464d86c1.js",
+    "static/js/2.959840f6.chunk.js",
+    "static/css/main.0e493b86.chunk.css",
+    "static/js/main.b83612c8.chunk.js"
+  ]
+}
