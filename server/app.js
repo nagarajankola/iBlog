@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5050;
 
 require('./db/conn')
 
-app.use(express.json());
+app.use(express.json()); 
 
 // app.use(cors({
     // origin: "*",

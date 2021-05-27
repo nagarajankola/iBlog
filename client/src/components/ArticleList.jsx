@@ -17,7 +17,7 @@ export default function ArticleList() {
     // console.log(articleList);
     const res = await fetch("/allarticles", {
       method: "GET",
-    })
+    }) 
       .then((response) => response.json())
       .then((data) => {
         setArticleList(data.allArticles);
