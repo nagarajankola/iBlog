@@ -22,7 +22,6 @@ router.post("/login", async (req, res) => {
     }
 
     const userLogin = await User.findOne({ email: email });
-
     if (userLogin) {
       const isMatch = password === userLogin.password;
 
