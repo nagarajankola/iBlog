@@ -15,7 +15,7 @@ export default function ArticleList() {
 
   useEffect(async () => {
     // console.log(articleList);
-    const res = await fetch("/allarticles", {
+    const res = await fetch("https://iblog-nagraj.herokuapp.com/allarticles", {
       method: "GET",
       mode: "no-cors"
     })
