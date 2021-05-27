@@ -13,6 +13,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
     "framer-motion": "^4.1.17",
     "immer": "^9.0.2",
     "notistack": "^1.0.8",

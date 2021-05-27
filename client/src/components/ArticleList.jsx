@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import images from "../utils/postImages";
 import avatarImages from "../utils/avatarImages";
 import loading from "../images/loadingg.svg";
+import axios from "axios";
 
 
 export default function ArticleList() {
